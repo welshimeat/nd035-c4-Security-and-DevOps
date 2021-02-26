@@ -52,3 +52,12 @@
 2021-02-26 09:55:41,887 ERROR c.e.d.c.UserController [http-nio-8080-exec-6] Password need to longer than 7 characters and equals to confirmPassword
 2021-02-26 09:55:44,975 ERROR c.e.d.c.UserController [http-nio-8080-exec-8] Password need to longer than 7 characters and equals to confirmPassword
 2021-02-26 09:55:45,480 ERROR c.e.d.c.UserController [http-nio-8080-exec-10] Password need to longer than 7 characters and equals to confirmPassword
+2021-02-26 11:25:41,285 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on DESKTOP-SECE6CM with PID 6988 (C:\Users\jm943\Desktop\nd035-c4-Security-and-DevOps\starter_code\target\classes started by jm943 in C:\Users\jm943\Desktop\nd035-c4-Security-and-DevOps\starter_code)
+2021-02-26 11:25:41,293 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-02-26 11:25:45,277 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 4.409 seconds (JVM running for 6.734)
+2021-02-26 11:26:12,121 ERROR c.e.d.c.UserController [http-nio-8080-exec-1] Password need to longer than 7 characters and equals to confirmPassword
+2021-02-26 11:26:19,568 INFO c.e.d.c.UserController [http-nio-8080-exec-4] User name(Sareeta) was successfully created
+2021-02-26 11:27:58,454 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on DESKTOP-SECE6CM with PID 11448 (C:\Users\jm943\Desktop\nd035-c4-Security-and-DevOps\starter_code\target\classes started by jm943 in C:\Users\jm943\Desktop\nd035-c4-Security-and-DevOps\starter_code)
+2021-02-26 11:27:58,461 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-02-26 11:28:01,502 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 3.363 seconds (JVM running for 4.587)
+2021-02-26 11:28:19,438 INFO c.e.d.c.UserController [http-nio-8080-exec-3] User name(Sareeta) was successfully created
