@@ -2,7 +2,6 @@ package com.example.demo.controllers;
 
 import java.util.Optional;
 
-import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,19 +49,19 @@ public class UserController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
-		BasicConfigurator.configure();
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
-		log.info("User name set with ", createUserRequest.getUsername());
 		Cart cart = new Cart();
 		cartRepository.save(cart);
 		user.setCart(cart);
 		if(createUserRequest.getPassword().length() < 7 ||
 				!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
+			log.error("Password need to longer than 7 characters and equals to confirmPassword");
 			return ResponseEntity.badRequest().build();
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		userRepository.save(user);
+		log.info("User name(" +  createUserRequest.getUsername() + ") was successfully created");
 		return ResponseEntity.ok(user);
 	}
 	
